@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  justify-content: center;
+}
+
+.cifraMemory-pontos {
+  text-align: right;
+  display: block;
+}
+
+.cifraMemory-nota {
+  line-height: 200px;
+  display: block;
+  font-size: 100px;
+  transition: all .5s;
+  color: black;
+}
+
+.error .cifraMemory-nota {
+  color: red;
+}
+
+.error button {
+  pointer-events: none;
+}
+
+.success .cifraMemory-nota{
+  color: green;
+}
+
+.cifraMemory-teclado {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.cifraMemory-tecla {
+  background-color: #e6e7e8;
+  padding: 10px;
+  color: #000;
+}
+
+.cifraMemory-tecla.error,
+.cifraMemory-tecla.success {
+  color: #fff;
+}
+
+.cifraMemory-tecla.success {
+  background-color: green;
+}
+
+.cifraMemory-tecla.error {
+  background-color: red;
+}
